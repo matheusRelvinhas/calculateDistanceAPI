@@ -55,9 +55,11 @@ async function calculateDistance(origin, destiny) {
   };
 }
 
-//app.listen(PORT, () => {
-//  console.log(`Server running on the port ${PORT}`);
-//});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server running on the port ${PORT}`);
+  });
+}
 
 // Exportar o app para uso no Vercel
 module.exports = app;
