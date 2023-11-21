@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-app.get('/', async (req, res) => {
+app.use(async (req, res) => {
   const { origin, destiny } = req.query;
 
   if (!origin || !destiny || origin == '' || destiny == '') {
