@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-app.use(async (req, res) => {
+app.get('/', async (req, res) => {
   const { origin, destiny } = req.query;
 
   if (!origin || !destiny || origin == '' || destiny == '') {
@@ -54,6 +54,10 @@ async function calculateDistance(origin, destiny) {
     value: distanceValue,
   };
 }
+
+app.listen(PORT, () => {
+  console.log(`Server running on the port ${PORT}`);
+});
 
 // Exportar o app para uso no Vercel
 module.exports = app;
