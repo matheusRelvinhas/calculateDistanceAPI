@@ -24,7 +24,7 @@ app.get('/', async (req, res) => {
     res.json({ distance });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Error calculate distance' });
+    res.status(500).json({ error: 'Error calculate distance', details: error.message });
   }
 });
 
