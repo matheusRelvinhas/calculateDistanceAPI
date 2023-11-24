@@ -1,7 +1,7 @@
 Back-end - https://calculate-distance-api.vercel.app/
 Front-end - https://front-api-calculate-distance.vercel.app/
 
-Calculate distance api é uma solução simples para usuários calculatem distância de forma rápida e inteuitiva.
+Calculate distance api é uma solução simples para usuários calcularem distância de forma rápida e intuitiva.
 Ultiliza linguagens para front-end next.js e para back-end node.js.
 
 Exemplo de como ultilizar a api usando axios em typescript:
